@@ -1,0 +1,159 @@
+{
+  "project_name": "MARCH LIMITADA",
+  "design_philosophy": {
+    "theme": "Elegant Minimalism",
+    "core_concept": "Affordable Luxury - Transforming the variety of a 'Chinese Mall' into a curated, premium boutique experience.",
+    "emotional_tone": "Sophisticated, Trustworthy, Modern, Exclusive",
+    "visual_style": "High Contrast (Black/White) with Gold Accents. Generous whitespace. Sharp typography."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "usage": "Use for all major section headings (H1, H2). Adds the 'Premium' layer.",
+      "weights": ["400", "700"],
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "usage": "Use for all UI text, descriptions, prices, and buttons. Adds the 'Modern' layer.",
+      "weights": ["400", "500", "600"],
+      "tracking": "tracking-normal"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Use strictly for SKU numbers, technical specs, or tiny overline labels.",
+      "weights": ["400"]
+    }
+  },
+  "colors": {
+    "primary": {
+      "gold": "#C9A227",
+      "gold_hover": "#B08D1F",
+      "gold_light": "#F2E6C2"
+    },
+    "neutrals": {
+      "black": "#1a1a1a",
+      "charcoal": "#2C2C2C",
+      "grey_medium": "#888888",
+      "grey_light": "#F5F5F5",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "error": "#EF4444",
+      "warning": "#F59E0B",
+      "info": "#3B82F6"
+    },
+    "backgrounds": {
+      "main": "#FFFFFF",
+      "secondary": "#FAFAFA",
+      "dark_section": "#1a1a1a"
+    }
+  },
+  "layout_strategies": {
+    "container": {
+      "max_width": "max-w-7xl",
+      "padding": "px-6 md:px-12 lg:px-24",
+      "center": "mx-auto"
+    },
+    "grid_system": {
+      "home_categories": "Bento Grid / Tetris Style. Use grid-cols-12. Mix spans of 4, 6, and 8.",
+      "product_catalog": "Clean uniform grid. Mobile: 1 col, Tablet: 2 cols, Desktop: 3 or 4 cols. Gap: gap-x-8 gap-y-12."
+    },
+    "spacing": {
+      "section_gap": "py-24 or py-32",
+      "element_gap": "gap-6 or gap-8"
+    }
+  },
+  "component_guidelines": {
+    "buttons": {
+      "primary": "bg-[#1a1a1a] text-white hover:bg-[#C9A227] hover:text-black transition-colors duration-300 rounded-none px-8 py-6 text-sm tracking-widest uppercase font-bold",
+      "secondary": "border border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-colors duration-300 rounded-none px-8 py-6 text-sm tracking-widest uppercase",
+      "ghost": "text-[#1a1a1a] hover:text-[#C9A227] underline-offset-4 hover:underline transition-colors"
+    },
+    "cards": {
+      "product": "group relative bg-transparent border-none. Image aspect-ratio [3/4] or [1/1]. No visible border. Image zoom on hover. Info appears below. 'Add to Cart' button slides up over image on hover (Desktop) or visible below (Mobile).",
+      "category": "relative overflow-hidden h-[400px] or h-[600px]. Text overlay bottom-left. Dark gradient overlay strictly at the bottom for text readability."
+    },
+    "inputs": {
+      "style": "border-b border-gray-300 bg-transparent rounded-none px-0 py-4 focus:border-[#C9A227] focus:ring-0 transition-colors placeholder:text-gray-400"
+    },
+    "navigation": {
+      "header": "Fixed, White background (glassmorphism optional). Minimal height (h-20). Logo centered or left. Icons (Search, Cart, User) right. Navigation links centered.",
+      "mobile": "Sheet component from right. Full black background, white text."
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "none",
+      "hover": "shadow-2xl shadow-black/5",
+      "dropdown": "shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
+    },
+    "borders": {
+      "subtle": "border border-gray-100",
+      "accent": "border-l-2 border-[#C9A227]"
+    },
+    "animations": {
+      "hover_zoom": "transition-transform duration-700 ease-out group-hover:scale-105",
+      "fade_in": "animate-in fade-in duration-700 slide-in-from-bottom-4",
+      "parallax": "Use strictly for Hero sections."
+    }
+  },
+  "assets": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_estimar-cloud/artifacts/am9rmxu9_Logo%20Final.png",
+    "whatsapp_number": "+5694727116",
+    "images": {
+      "hero": [
+        "https://images.unsplash.com/photo-1760072513442-9872656c1b07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1765862835326-14b5070fdde9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "home_decor": [
+        "https://images.unsplash.com/photo-1766756388111-e3d5cb5edafb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1760072513357-9d450e935a80?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "technology": [
+        "https://images.unsplash.com/photo-1759588071845-3864bd8cc9d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwxfHxzbGVlayUyMG1vZGVybiUyMHRlY2hub2xvZ3klMjBnYWRnZXRzJTIwbWluaW1hbGlzdCUyMGJsYWNrJTIwd2hpdGV8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1760462787799-eccd2ccdb2dd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxzbGVlayUyMG1vZGVybiUyMHRlY2hub2xvZ3klMjBnYWRnZXRzJTIwbWluaW1hbGlzdCUyMGJsYWNrJTIwd2hpdGV8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1655742785144-c0a8017a7296?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxzbGVlayUyMG1vZGVybiUyMHRlY2hub2xvZ3klMjBnYWRnZXRzJTIwbWluaW1hbGlzdCUyMGJsYWNrJTIwd2hpdGV8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "accessories": [
+        "https://images.unsplash.com/photo-1558038785-4fe65c791c99?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBmYXNoaW9uJTIwYWNjZXNzb3JpZXMlMjBtaW5pbWFsaXN0JTIwZmxhdGxheSUyMGdvbGQlMjBibGFja3xlbnwwfHx8fDE3NzEyOTAzNjl8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1758995115785-d13726ac93f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBmYXNoaW9uJTIwYWNjZXNzb3JpZXMlMjBtaW5pbWFsaXN0JTIwZmxhdGxheSUyMGdvbGQlMjBibGFja3xlbnwwfHx8fDE3NzEyOTAzNjl8MA&ixlib=rb-4.1.0&q=85"
+      ],
+      "tools": [
+        "https://images.unsplash.com/photo-1745426863308-308b92bff031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1745571479305-fc943d218520?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwaG9tZSUyMGRlY29yJTIwbHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcxMjkwMzU4fDA&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "library_recommendations": {
+    "required": [
+      "@radix-ui/react-slot",
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "lucide-react",
+      "sonner",
+      "framer-motion"
+    ],
+    "charts": "recharts",
+    "animation": "framer-motion"
+  },
+  "universal_guidelines": {
+    "do_not": [
+      "Use gradients for backgrounds (Solid White or Black only)",
+      "Use 'Inter' font for headings",
+      "Center text in Hero sections (Left align for stronger impact unless symmetrical)",
+      "Use rounded buttons (Use sharp/square or pill, stick to one)",
+      "Use bright colors like blue, red, green for main UI elements (Only for system status)"
+    ],
+    "must": [
+      "Use 'Playfair Display' for Headings",
+      "Use 'Manrope' for Body",
+      "Ensure all buttons have a hover state that involves Gold (#C9A227)",
+      "Add 'data-testid' to all interactive elements",
+      "Use 'sonner' for notifications"
+    ]
+  },
+  "instructions_to_main_agent": "1. Install 'framer-motion' if not present. 2. Update 'index.html' to include Google Fonts for Playfair Display and Manrope. 3. Update 'tailwind.config.js' to include the new fonts and colors. 4. Build the 'Header' first with the Gold Logo. 5. Build the 'Hero' section using the 'Hero' images provided. 6. Build the 'Catalog' page with the 'Product' card style defined."
+}
