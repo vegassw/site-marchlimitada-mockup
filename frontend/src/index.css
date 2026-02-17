@@ -104,3 +104,8 @@ code {
         display: contents !important;
     }
 }
+
+/* Hide Emergent badge for mockups */
+#emergent-badge {
+    display: none !important;
+}
