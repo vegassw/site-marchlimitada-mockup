@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta E-commerce | MARCH LIMITADA | VESoftSolutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: #FAFAFA;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header */
+        .header {
+            background: #1a1a1a;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .header-logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 24px;
+        }
+        
+        .header h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .header h1 span {
+            color: #C9A227;
+        }
+        
+        .header p {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #C9A227;
+            color: #1a1a1a;
+            padding: 8px 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 24px;
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-dark {
+            background: #1a1a1a;
+            color: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title span {
+            display: block;
+            color: #C9A227;
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+        }
+        
+        /* Mockups */
+        .mockups-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        
+        .mockup-item {
+            background: #fff;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+        }
+        
+        .mockup-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .mockup-item h3 {
+            padding: 24px;
+            font-size: 1.25rem;
+            border-left: 3px solid #C9A227;
+            margin: 0;
+            background: #FAFAFA;
+        }
+        
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        
+        .feature-card {
+            background: #fff;
+            padding: 40px 32px;
+            border-left: 3px solid #C9A227;
+        }
+        
+        .section-dark .feature-card {
+            background: #2C2C2C;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .section-dark .feature-card p {
+            color: #aaa;
+        }
+        
+        /* Pricing */
+        .pricing-table {
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        .pricing-header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .pricing-header .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #C9A227;
+        }
+        
+        .pricing-header .price small {
+            font-size: 1rem;
+            color: #888;
+            font-weight: 400;
+        }
+        
+        .pricing-body {
+            padding: 40px;
+        }
+        
+        .pricing-body ul {
+            list-style: none;
+        }
+        
+        .pricing-body li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .pricing-body li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-body li::before {
+            content: "✓";
+            color: #C9A227;
+            font-weight: 700;
+        }
+        
+        .pricing-extra {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        .pricing-extra-item {
+            background: #F5F5F5;
+            padding: 24px;
+            text-align: center;
+        }
+        
+        .pricing-extra-item h4 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        
+        .pricing-extra-item .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #C9A227;
+        }
+        
+        /* Timeline */
+        .timeline {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            display: flex;
+            gap: 24px;
+            padding: 24px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+        
+        .timeline-number {
+            width: 50px;
+            height: 50px;
+            background: #C9A227;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .timeline-content h4 {
+            margin-bottom: 8px;
+        }
+        
+        .timeline-content p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        /* CTA */
+        .cta {
+            background: #C9A227;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            color: #1a1a1a;
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        
+        .cta p {
+            color: #1a1a1a;
+            opacity: 0.8;
+            margin-bottom: 32px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 16px 48px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #fff;
+            color: #1a1a1a;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: #888;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.75rem;
+            }
+            
+            .pricing-header .price {
+                font-size: 2rem;
+            }
+            
+            .cta h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="https://customer-assets.emergentagent.com/job_estimar-cloud/artifacts/am9rmxu9_Logo%20Final.png" alt="MARCH LIMITADA" class="header-logo">
+            <h1>Propuesta <span>E-commerce</span></h1>
+            <p>Desarrollo de Plataforma Web Profesional</p>
+            <div class="badge">VESoftSolutions 2026</div>
+        </div>
+    </header>
+    
+    <!-- Mockups -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span>Vista Previa</span>
+                <h2>Diseño del Sitio Web</h2>
+            </div>
+            
+            <div class="mockups-grid">
+                <div class="mockup-item">
+                    <img src="https://i.imgur.com/placeholder1.png" alt="Home - MARCH LIMITADA" onerror="this.src='https://via.placeholder.com/1200x600/1a1a1a/C9A227?text=HOME+-+MARCH+LIMITADA'">
+                    <h3>HOME - Página Principal</h3>
+                </div>
+                <div class="mockup-item">
+                    <img src="https://i.imgur.com/placeholder2.png" alt="Categorías" onerror="this.src='https://via.placeholder.com/1200x600/1a1a1a/C9A227?text=CATEGORÍAS+-+Hogar+|+Tecnología+|+Accesorios+|+Herramientas'">
+                    <h3>Categorías de Productos</h3>
+                </div>
+                <div class="mockup-item">
+                    <img src="https://i.imgur.com/placeholder3.png" alt="Productos Destacados" onerror="this.src='https://via.placeholder.com/1200x600/1a1a1a/C9A227?text=PRODUCTOS+DESTACADOS+con+Precios+y+Ofertas'">
+                    <h3>Productos Destacados + Visión y Misión</h3>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://estimar-cloud.preview.emergentagent.com" target="_blank" class="cta-button" style="background: #C9A227; color: #1a1a1a;">
+                    Ver Mockup Interactivo →
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Qué incluye -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <span>Alcance del Proyecto</span>
+                <h2>¿Qué Incluye?</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>Sitio Web Público</h4>
+                    <p>HOME con visión/misión, CATÁLOGO con buscador y filtros, PÁGINA DE PRODUCTO con galería, WhatsApp y ficha técnica.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Panel Administrativo</h4>
+                    <p>Login seguro, Dashboard, Gestión de productos (imágenes, precios, stock, SKU, ofertas) y Categorías/Subcategorías.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>WhatsApp Automático</h4>
+                    <p>Botón que envía mensaje con nombre del producto y enlace directo para cerrar ventas rápidamente.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Diseño Premium</h4>
+                    <p>Minimalista y elegante. Blanco, negro y dorado acorde a la identidad de MARCH LIMITADA.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Google Cloud</h4>
+                    <p>Alojamiento en la misma infraestructura que Spotify y PayPal. Alta disponibilidad 99.9%.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>SEO + Analytics</h4>
+                    <p>Optimizado para aparecer en Google. Incluye Google Analytics para medir visitas y comportamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span>Inversión</span>
+                <h2>Costos del Proyecto</h2>
+            </div>
+            
+            <div class="pricing-table">
+                <div class="pricing-header">
+                    <h3>Servicio Mensual</h3>
+                    <div class="price">$60.000 <small>CLP/mes</small></div>
+                </div>
+                <div class="pricing-body">
+                    <ul>
+                        <li>Alojamiento en Google Cloud Platform</li>
+                        <li>Base de datos MongoDB segura</li>
+                        <li>Almacenamiento ilimitado de imágenes y videos</li>
+                        <li>Certificado SSL (conexión segura HTTPS)</li>
+                        <li>Backups automáticos diarios</li>
+                        <li>Monitoreo 24/7</li>
+                        <li>Actualizaciones de seguridad</li>
+                        <li>Corrección de errores</li>
+                        <li>Ajustes menores de diseño</li>
+                        <li>Soporte técnico prioritario</li>
+                    </ul>
+                    
+                    <div class="pricing-extra">
+                        <div class="pricing-extra-item">
+                            <h4>Dominio marchlimitada.cl</h4>
+                            <div class="price">$27.999 <small>CLP/año</small></div>
+                        </div>
+                        <div class="pricing-extra-item">
+                            <h4>Desarrollo Inicial</h4>
+                            <div class="price">Por Cotizar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-title">
+                <span>Tiempo de Entrega</span>
+                <h2>2 Semanas</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h4>Semana 1</h4>
+                        <p>Diseño completo UI/UX + Backend funcional con base de datos y APIs</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h4>Semana 2</h4>
+                        <p>Frontend completo + Panel admin + Pruebas + Despliegue en Google Cloud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Escalabilidad -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span>Preparado para Crecer</span>
+                <h2>Funcionalidades Futuras</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>💳 Pagos en Línea</h4>
+                    <p>Integración con Webpay, Mercado Pago o Stripe para vender directamente desde el sitio.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🛒 Carrito de Compras</h4>
+                    <p>Sistema completo de carrito, checkout y gestión de pedidos.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📱 Redes Sociales</h4>
+                    <p>Publicación automática de productos en Instagram y Facebook.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📧 Email Marketing</h4>
+                    <p>Newsletters y campañas de email para fidelizar clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Comenzamos?</h2>
+            <p>Transformemos MARCH LIMITADA en una tienda online profesional</p>
+            <a href="https://wa.me/5694727116?text=Hola,%20me%20interesa%20la%20propuesta%20de%20desarrollo%20web%20para%20MARCH%20LIMITADA" class="cta-button">
+                Contactar por WhatsApp
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">VESoftSolutions</div>
+            <p>Desarrollo de Software a Medida</p>
+            <p style="margin-top: 24px; font-size: 0.85rem;">© 2026 - Propuesta válida por 15 días</p>
+        </div>
+    </footer>
+</body>
+</html>
